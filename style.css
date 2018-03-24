@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: black;
+  width: 100%;
+  padding: 2% 0% 2% 0%;
+  color: white;
+}
+
+.center {
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}

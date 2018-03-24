@@ -1,5 +1,5 @@
 //longest word in a sentence 
-document.getElementById('longest-submit').onclick=function() {
+document.getElementById('longest-submit').onclick = () => {
   let longest = 0
   let sentence = document.getElementById('longest-input').value.split(' ')
     sentence.forEach(function(word){
@@ -13,9 +13,9 @@ document.getElementById('longest-submit').onclick=function() {
 }
 
 //palindrome 
-document.getElementById('pal-submit').onclick=function() {
+document.getElementById('pal-submit').onclick = () => {
   word = document.getElementById('pal-input').value
-  var test =  word.replace(/[^A-Z0-9]+/ig, '')
+  let test =  word.replace(/[^A-Z0-9]+/ig, '')
     if ( test === test.split('').reverse().join('') ) {
       document.getElementById('pal-answer').innerHTML = 'The word is a palindrome'       
     } else {
@@ -24,7 +24,7 @@ document.getElementById('pal-submit').onclick=function() {
 }
 
 //factorial of a number 
-document.getElementById('factorial-submit').onclick=function() {
+document.getElementById('factorial-submit').onclick = () => {
   let num = document.getElementById('factorial-input').value
   let factorial = 1
   for ( i=1; i <= num; i++) { 
@@ -34,7 +34,7 @@ document.getElementById('factorial-submit').onclick=function() {
 }
 
 //reverse a string 
-document.getElementById('reverse-submit').onclick=function() {
+document.getElementById('reverse-submit').onclick = () => {
   let string = document.getElementById('reverse-input').value.split('').reverse().join('')
   document.getElementById('reverse-answer').innerHTML = 'Reversed: ' + string        
 }
